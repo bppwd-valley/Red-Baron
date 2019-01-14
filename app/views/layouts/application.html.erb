@@ -10,6 +10,46 @@
   </head>
 
   <body>
+    <nav class="navbar sticky-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">The Red Baron</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Directions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pickup</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <span class="navbar-text">
+            Address, Number, Hours
+          </span>
+        </ul>
+      </div>
+    </nav>
     <%= yield %>
+    <ul class="navbar nav fixed-bottom nav-fill bg-dark">
+      <li class="nav-item color-dark">
+        <a class="nav-link linkreset" href="#">Address</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link linkreset" href="#">Phone Number</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link linkreset" href="#">Facebook Link</a>
+      </li>
+    </ul>
   </body>
 </html>
