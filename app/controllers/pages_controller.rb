@@ -3,4 +3,6 @@ class PagesController < ApplicationController
   end
   def directions
   end
+  def about
+  end
 end

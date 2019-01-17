@@ -6,15 +6,8 @@ body, html {
   color: white;
 }
 
-.slickyboi {
-  padding-top: 56px;
-  padding-bottom: 56px;
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .slickyboi, .single-item {
-  height: 100%;
+  height: 100vh;
   width: 100%;
 }
 
@@ -22,12 +15,22 @@ body, html {
   margin-bottom: 0;
 }
 
-div.single-item div {
-  /* background-image: url("https://dummyimage.com/2000x2000/000/fff.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
+div.single-item div{
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
-  background-color: #464646; */
-  height: auto;
+}
+
+div.about-slider div{
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
