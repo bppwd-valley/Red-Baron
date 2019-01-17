@@ -18,7 +18,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <%= link_to "About", pages_about_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
@@ -45,14 +45,16 @@
       </div>
       </nav>
     </div>
-    <%= yield %>
     <div class="container-fluid">
-      <ul class="navbar fixed-bottom nav nav-fill bg-dark">
+      <%= yield %>
+    </div>
+    <div class="container-fluid">
+      <ul class="navbar fixed-bottom nav nav-justified bg-dark">
         <li class="nav-item color-dark">
-          <a class="nav-link linkreset" href="#">Address</a>
+          <a class="nav-link linkreset" href="#">220 Airport Access Rd, Southbridge, MA 01550</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link linkreset" href="#">Phone Number</a>
+          <a class="nav-link linkreset" href="#">(508) 765-5800</a>
         </li>
         <li class="nav-item">
           <a class="nav-link linkreset" href="#">Facebook Link</a>

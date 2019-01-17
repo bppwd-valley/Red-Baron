@@ -6,6 +6,10 @@ body, html {
   color: white;
 }
 
+.p56 {
+  padding-top: 56px;
+}
+
 .slickyboi, .single-item {
   height: 100vh;
   width: 100%;
