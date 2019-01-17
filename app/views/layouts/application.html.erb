@@ -10,46 +10,56 @@
   </head>
 
   <body>
-    <nav class="navbar sticky-top navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">The Red Baron</a>
+    <div class="container-fluid">
+      <nav class="navbar fixed-top navbar-dark bg-dark">
+      <%= link_to "The Red Baron", "#", class: "navbar-brand" %>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+            <%= link_to "About", "#", class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Menus</a>
+            <%= link_to "Menus", "#", class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Directions</a>
+            <%= link_to "Directions", pages_directions_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pickup</a>
+            <%= link_to "Schedule A Pick-Up", "#", class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <%= link_to "Contact", "#", class: "nav-link" %>
           </li>
           <span class="navbar-text">
-            Address, Number, Hours
+            <hr>
+            <p> 220 Airport Access Rd, Southbridge, MA 01550 </p>
+            <hr>
+            <p> (508) 765-5800 </p>
+            <hr>
+            <p> Hours </p>
           </span>
         </ul>
       </div>
-    </nav>
-    <%= yield %>
-    <ul class="navbar nav fixed-bottom nav-fill bg-dark">
-      <li class="nav-item color-dark">
-        <a class="nav-link linkreset" href="#">Address</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link linkreset" href="#">Phone Number</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link linkreset" href="#">Facebook Link</a>
-      </li>
-    </ul>
+      </nav>
+    </div>
+    <div class="container-fluid slickyboi">
+      <%= yield %>
+    </div>
+    <div class="container-fluid">
+      <ul class="navbar fixed-bottom nav nav-fill bg-dark">
+        <li class="nav-item color-dark">
+          <a class="nav-link linkreset" href="#">Address</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link linkreset" href="#">Phone Number</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link linkreset" href="#">Facebook Link</a>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
