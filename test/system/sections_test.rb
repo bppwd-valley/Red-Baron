@@ -14,6 +14,7 @@ class SectionsTest < ApplicationSystemTestCase
     visit sections_url
     click_on "New Section"
 
+    fill_in "Description", with: @section.description
     click_on "Create Section"
 
     assert_text "Section was successfully created"
@@ -24,6 +25,7 @@ class SectionsTest < ApplicationSystemTestCase
     visit sections_url
     click_on "Edit", match: :first
 
+    fill_in "Description", with: @section.description
     click_on "Update Section"
 
     assert_text "Section was successfully updated"
